@@ -1,34 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Design layout</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Website</title>
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom-->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
-    <div class="navbar-brand">
-        <a href="#" class="logo">The Roaring Lion</a>
-    </div>
-    <div class="navbar-links">
-        <a hreff="index.html">Home</a>
-        <a hreff="about.html">About</a>
-        <a hreff="service.html">Service</a>
-        <a hreff="contact.html">Contact us</a>
-        
-    </div>
-    </div>
-    <div class="container">
-        <div class="top squares">
-            <div id="square1" class="square"></div>
-            <div id="square2" class="square"></div>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="img/ntitled design.png" alt="Company Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Search Bar -->
+        <div class="container text-center mt-5">
+            <h1>Delicious Delivered: Savor the Flavors, Right at Your Doorstep!</h1>
+            <p>Order from your favorite restaurants</p>
+            <a href="#" class="btn btn-primary btn-lg">Order Now</a>
         </div>
-        <div class="bottom squares">
-            <div id="square3" class="square"></div>
-            <div id="square7" class="square"></div>
+    </header>
+
+    <!-- Featured Restaurants -->
+    <section class="container my-5">
+        <h2 class="text-center">Featured Restaurants</h2>
+        <div class="row">
+            <!-- Restaurant Cards -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/Places_To_Eat_Fall_755ea245-c528-43f5-b3ab-61f24259a078.jpg" class="card-img-top" alt="Restaurant 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Restaurant 1</h5>
+                        <p class="card-text">Description of the restaurant goes here.</p>
+                        <a href="#" class="btn btn-primary">View Menu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img/temp_4bc89181-28a6-4ebd-ab3d-3493f5f19ba4.jpg" class="card-img-top" alt="Restaurant 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Restaurant 1</h5>
+                        <p class="card-text">Description of the restaurant goes here.</p>
+                        <a href="#" class="btn btn-primary">View Menu</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Cuisine Categories -->
+    <section class="container my-5">
+        <h2 class="text-center">Cuisine Categories</h2>
+        <div class="row">
+            <!-- Category Buttons -->
+            <div class="col-md-4 mb-4">
+                <a href="#" class="btn btn-outline-primary btn-block">Chinese</a>
+            </div>
+            <!-- Repeat the above button structure for more cuisine categories -->
         </div>
-        <div id="rectangle"></div>
-    </div>
-    <div class="footer">
-    </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="container my-5">
+        <h2 class="text-center">Testimonials</h2>
+        <div class="row">
+            <!-- Testimonial Cards -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="customer1.jpg" class="card-img-top" alt="Customer 1">
+                    <div class="card-body">
+                        <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                        <p class="card-text"><strong>John Doe</strong></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat the above card structure for more testimonials -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Footer Links -->
+                    <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <!-- Social Media Icons -->
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Newsletter Subscription Form -->
+            <div class="row">
+                <div class="col-md-12">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Subscribe to our newsletter:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add Bootstrap JS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+

@@ -55,3 +55,8 @@ body{
         text-align: center;
         padding: 50px;
        }
+       .navbar-brand{
+        width: 5px;
+        height: 5px;
+        object-fit: contain;
+       }
